@@ -41,3 +41,7 @@ a {
 .thumbnail-item + .thumbnail-item {
   margin-top: 10px;
 }
+
+.detail-image {
+  width: 90%;
+}
