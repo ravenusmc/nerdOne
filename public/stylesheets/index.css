@@ -50,10 +50,13 @@ a {
   max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
+
+  transition: transform 133ms ease-in-out;
 }
 
 .thumbnail-item:hover{
   transform: scale(1.2);
+
 }
 
 .detail-image-container {
@@ -63,10 +66,6 @@ a {
   align-items: center;
 }
 
-.detail-image-frame {
-  position: relative;
-  text-align: center;
-}
 
 .thumbnail-list {
   flex: 0 1 auto;
@@ -78,6 +77,18 @@ a {
 
   white-space: nowrap;
   overflow-x: auto;
+}
+
+.detail-image-frame {
+  position: relative;
+  text-align: center;
+
+  transition: transform 333ms cubic-bezier(1,.06,.28,1);
+}
+
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0ms;
 }
 
 .detail-image {
